@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Best Friend ❤️</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    width: 100%;
+    min-height: 100vh;
+    background: #16001f;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    scroll-behavior: smooth;
+}
+/* FIRST SCREEN */
+
+#home {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #16001f,
+        #3b082f,
+        #12001a
+    );
+
+}
+        .container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .small-text {
+            color: #ff8fab;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .notification {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+
+            backdrop-filter: blur(15px);
+
+            padding: 25px;
+            border-radius: 22px;
+
+            text-align: left;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .notification:hover {
+            transform: scale(1.03);
+        }
+
+        .notification:active {
+            transform: scale(0.97);
+        }
+
+        .notification-header {
+            display: flex;
+            justify-content: space-between;
+
+            color: rgba(255, 255, 255, 0.6);
+
+            font-size: 12px;
+
+            margin-bottom: 12px;
+        }
+
+        .friend-name {
+            font-size: 19px;
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+        .message {
+            font-size: 14px;
+
+            color: rgba(255, 255, 255, 0.8);
+
+            line-height: 1.6;
+        }
+
+        .tap {
+            margin-top: 25px;
+
+            font-size: 12px;
+
+            color: rgba(255, 255, 255, 0.6);
+
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+        }
+
+        .heart {
+            position: fixed;
+
+            bottom: -50px;
+
+            font-size: 25px;
+
+            animation: floatUp linear infinite;
+
+            opacity: 0.7;
+
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+
+            from {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+
+        }
+/* FRIENDSHIP DAY SCREEN */
+
+#friendship {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #3b082f,
+        #16001f,
+        #2b0638
+    );
+
+}
+
+
+.celebration {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    animation: appear 1s ease;
+
+}
+
+
+.stars {
+
+    font-size: 55px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.celebration h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+    color: #fff0f5;
+
+}
+
+
+.celebration p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.85);
+
+}
+
+
+.celebration button {
+
+    margin-top: 30px;
+
+    padding: 14px 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff2a5f,
+        #ff758c
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(255,42,95,0.4);
+
+    transition: 0.3s;
+
+}
+
+
+.celebration button:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+/* ============================= */
+/* FINAL LETTER SECTION */
+/* ============================= */
+
+#letter {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #16001f,
+        #3b082f,
+        #210027
+    );
+
+}
+
+
+.letter-content {
+
+    width: 90%;
+    max-width: 500px;
+
+}
+
+
+.letter-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+    animation: letterFloat 2s ease-in-out infinite;
+
+}
+
+
+.letter-content h2 {
+
+    font-size: 32px;
+
+    color: #fff0f5;
+
+    margin-bottom: 20px;
+
+}
+
+
+.letter-box {
+
+    background: rgba(255,255,255,0.95);
+
+    color: #333;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.5);
+
+    border-left: 5px solid #ff2a5f;
+
+}
+
+
+.letter-box p {
+
+    color: #333;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+}
+
+
+.letter-box .dear {
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: #ff2a5f;
+
+}
+
+
+.letter-box .ending {
+
+    font-weight: bold;
+
+    color: #ff2a5f;
+
+}
+
+
+.letter-box .signature {
+
+    text-align: right;
+
+    font-weight: bold;
+
+    margin-bottom: 0;
+
+}
+
+
+.replay-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff2a5f,
+        #ff758c
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(255,42,95,0.4);
+
+}
+
+
+@keyframes letterFloat {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+}
+/* ============================= */
+/* FLOATING HEARTS */
+/* ============================= */
+
+.floating-heart {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 22px;
+
+    pointer-events: none;
+
+    z-index: 10;
+
+    opacity: 0.7;
+
+    animation: heartFloat 8s linear forwards;
+}
+
+
+@keyframes heartFloat {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+
+}
+/* ============================= */
+/* LETTER TEXT ANIMATION */
+/* ============================= */
+
+.letter-box p {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.letter-box p.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.replay-button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 10px 30px rgba(255,42,95,0.5);
+
+}
+
+
+.replay-button {
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+/* ============================= */
+/* MOBILE RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .celebration h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .memory-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .card-deck {
+
+        width: 240px;
+
+        height: 315px;
+
+    }
+
+
+    .letter-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .letter-box {
+
+        padding: 20px;
+
+    }
+
+
+    .letter-box p {
+
+        font-size: 13px;
+
+    }
+
+
+    .notification {
+
+        padding: 20px;
+
+    }
+
+}
+    </style>
+    /* ============================= */
+/* PHOTO MEMORY SECTION */
+/* ============================= */
+
+#memories {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #2b0638,
+        #16001f,
+        #3b082f
+    );
+
+}
+
+
+.memory-content {
+
+    width: 90%;
+    max-width: 500px;
+
+}
+
+
+.memory-content h2 {
+
+    font-size: 32px;
+
+    color: #fff0f5;
+
+    margin-bottom: 10px;
+
+}
+
+
+.memory-description {
+
+    color: rgba(255,255,255,0.7);
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* PHOTO CARD STACK */
+
+.card-deck {
+
+    position: relative;
+
+    width: 260px;
+    height: 340px;
+
+    margin: 0 auto 30px;
+
+    cursor: pointer;
+
+}
+
+
+.memory-card {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: #ffffff;
+
+    padding: 12px 12px 22px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.55);
+
+    color: #333;
+
+    transition:
+        transform 0.55s cubic-bezier(.2,.8,.2,1),
+        opacity 0.4s ease;
+
+    user-select: none;
+
+}
+
+
+.memory-card img {
+
+    width: 100%;
+
+    height: 85%;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+
+}
+
+
+.memory-card div {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #ff2a5f;
+
+    margin-top: 10px;
+
+}
+
+
+/* Stack positions */
+
+.memory-card:nth-child(1) {
+
+    z-index: 5;
+
+    transform: rotate(-4deg);
+
+}
+
+
+.memory-card:nth-child(2) {
+
+    z-index: 4;
+
+    transform:
+        rotate(3deg)
+        translate(5px, 5px);
+
+}
+
+
+.memory-card:nth-child(3) {
+
+    z-index: 3;
+
+    transform:
+        rotate(-2deg)
+        translate(-5px, 10px);
+
+}
+
+
+.memory-card:nth-child(4) {
+
+    z-index: 2;
+
+    transform:
+        rotate(4deg)
+        translate(7px, 15px);
+
+}
+
+
+.memory-card:nth-child(5) {
+
+    z-index: 1;
+
+    transform:
+        rotate(-3deg)
+        translate(-7px, 20px);
+
+}
+
+
+/* Next button */
+
+.next-button {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff2a5f,
+        #ff758c
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(255,42,95,0.4);
+
+}
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+
+    <div class="heart" style="left:10%; animation-duration:8s;">❤️</div>
+    <div class="heart" style="left:25%; animation-duration:10s;">💗</div>
+    <div class="heart" style="left:45%; animation-duration:7s;">💕</div>
+    <div class="heart" style="left:65%; animation-duration:11s;">❤️</div>
+    <div class="heart" style="left:85%; animation-duration:9s;">💖</div>
+
+
+    <!-- FIRST SCREEN -->
+
+<section id="home">
+
+    <div class="container">
+
+        <div class="small-text">
+            New Secret Message
+        </div>
+
+
+        <div class="notification" onclick="openMessage()">
+
+            <div class="notification-header">
+                <span>💬 MESSAGES</span>
+                <span>Just now</span>
+            </div>
+
+
+            <div class="friend-name">
+                Best Friend ❤️
+            </div>
+
+
+            <div class="message">
+                You have a special friendship message waiting for you. 💌
+            </div>
+
+        </div>
+
+
+        <div class="tap">
+            👆 Tap the message to open
+           </div>
+
+</section>
+
+<!-- FRIENDSHIP DAY SCREEN -->
+
+<section id="friendship">
+
+    <div class="celebration">
+
+        <div class="stars">
+            ✨ 🥳 ✨
+        </div>
+
+        <div class="small-text">
+            Celebration Time
+        </div>
+
+        <h1>
+            Happy Friendship Day!
+        </h1>
+
+        <p>
+            Today is all about celebrating our friendship,
+            our crazy laughs, our memories, and all the
+            wonderful moments we've shared together. ❤️
+        </p>
+
+        <button onclick="celebrate()">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</section>
+<!-- PHOTO MEMORY SECTION -->
+
+<section id="memories">
+
+    <div class="memory-content">
+
+        <div class="small-text">
+            Memory Gallery
+        </div>
+
+        <h2>
+            Our Beautiful Moments 📸
+        </h2>
+
+        <p class="memory-description">
+    👆 Tap the photo to see the next memory
+</p>
+
+        <div class="card-deck" onclick="rotateCards()">
+
+            <div class="memory-card">
+                <img src="images/pic1.jpg" alt="Memory 1">
+                <div>Best Times Together ✨</div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/pic2.jpg" alt="Memory 2">
+                <div>Beautiful Memories 💕</div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/pic3.jpg" alt="Memory 3">
+                <div>Crazy Moments 😂</div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/pic4.jpg" alt="Memory 4">
+                <div>Always Together ❤️</div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/pic5.jpg" alt="Memory 5">
+                <div>Forever Memories ✨</div>
+            </div>
+
+        </div>
+
+        <a href="#letter" class="next-button">
+            Read My Letter 💌
+        </a>
+
+    </div>
+
+</section>
+<!-- FINAL LETTER SECTION -->
+
+<section id="letter">
+
+    <div class="letter-content">
+
+        <div class="small-text">
+            From My Heart
+        </div>
+
+        <div class="letter-icon">
+            💌
+        </div>
+
+        <h2>
+            A Letter For You
+        </h2>
+
+        <div class="letter-box">
+
+            <p class="dear">
+                MY Dear Vyshuu,My Sweet heart, ❤️
+            </p>
+
+            <p>
+                I just wanted to take a moment to tell you
+                how grateful I am to have you in my life.
+            </p>
+
+            <p>
+                Life is brighter, funnier and more beautiful
+                with you around. Thank you for all the laughs,
+                memories and unforgettable moments.
+            </p>
+
+            <p>
+                No matter where life takes us,
+                I hope we always stay the same crazy friends
+                we are today. 🥹❤️
+            </p>
+
+            <p>
+                Thank you for always being there,
+                for understanding me and for making
+                ordinary moments special.
+            </p>
+            <p>
+                Hope this bond remains same 
+                till the people say 
+                "damn they are still together".
+            </p>
+            <p>
+                I Love You So Much Vyshu bngrm
+                dont leave me...
+                I dont want to loose u...
+                I will always there to irritate you...
+            </p>
+
+            <p class="ending">
+                Here's to many more memories together! ✨
+            </p>
+
+            <p class="signature">
+                Forever your bestie ❤️
+            </p>
+
+        </div>
+
+        <a href="#home"
+   class="replay-button"
+   onclick="restartExperience()">
+
+    ↻ Start Again
+
+</a>
+
+    </div>
+
+</section>
+    <script>
+
+    function openMessage() {
+
+        window.location.href = "#friendship";
+
+    }
+
+
+    function celebrate() {
+
+    createConfetti();
+
+    setTimeout(function() {
+
+        document
+            .getElementById("memories")
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+
+    }, 800);
+
+}
+
+
+    function rotateCards() {
+
+        const deck =
+            document.querySelector(".card-deck");
+
+        const topCard =
+            deck.querySelector(".memory-card");
+
+        topCard.style.transform =
+            "translateY(-140px) rotate(20deg)";
+
+        topCard.style.opacity = "0";
+
+
+        setTimeout(function() {
+
+            deck.appendChild(topCard);
+
+            topCard.style.opacity = "1";
+
+            topCard.style.transform =
+                "rotate(-4deg)";
+
+        }, 400);
+
+    }
+   function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("floating-heart");
+
+    const hearts = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💓",
+        "✨"
+    ];
+
+    heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration =
+        (6 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+
+    setTimeout(function() {
+
+        heart.remove();
+
+    }, 11000);
+
+}
+function createConfetti() {
+
+    const symbols = [
+        "❤️",
+        "💗",
+        "✨",
+        "💕",
+        "🎉",
+        "🥳"
+    ];
+
+
+    for (let i = 0; i < 30; i++) {
+
+        const piece =
+            document.createElement("div");
+
+        piece.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() * symbols.length
+                )
+            ];
+
+
+        piece.style.position = "fixed";
+
+        piece.style.left =
+            Math.random() * 100 + "vw";
+
+        piece.style.top =
+            "-30px";
+
+        piece.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+        piece.style.zIndex = "999";
+
+        piece.style.pointerEvents = "none";
+
+        piece.style.transition =
+            "transform 2s ease, opacity 2s ease";
+
+
+        document.body.appendChild(piece);
+
+
+        setTimeout(function() {
+
+            piece.style.transform =
+                `translateY(${window.innerHeight + 100}px) rotate(720deg)`;
+
+            piece.style.opacity = "0";
+
+        }, 50);
+
+
+        setTimeout(function() {
+
+            piece.remove();
+
+        }, 2200);
+
+    }
+
+}
+function showLetter() {
+
+    const paragraphs =
+        document.querySelectorAll("#letter .letter-box p");
+
+    paragraphs.forEach(function(paragraph, index) {
+
+        setTimeout(function() {
+
+            paragraph.classList.add("show");
+
+        }, index * 700);
+
+    });
+
+
+    // Final celebration after the letter appears
+
+    setTimeout(function() {
+
+        createHeartBurst();
+
+    }, paragraphs.length * 700 + 500);
+
+}
+function createHeartBurst() {
+
+    const hearts = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "✨"
+    ];
+
+
+    for (let i = 0; i < 20; i++) {
+
+        const heart =
+            document.createElement("div");
+
+        heart.innerHTML =
+            hearts[
+                Math.floor(
+                    Math.random() * hearts.length
+                )
+            ];
+
+        heart.style.position = "fixed";
+
+        heart.style.left = "50%";
+
+        heart.style.top = "50%";
+
+        heart.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+        heart.style.zIndex = "1000";
+
+        heart.style.pointerEvents = "none";
+
+        heart.style.transition =
+            "transform 1.8s ease, opacity 1.8s ease";
+
+
+        document.body.appendChild(heart);
+
+
+        const angle =
+            Math.random() * Math.PI * 2;
+
+        const distance =
+            100 + Math.random() * 200;
+
+        const x =
+            Math.cos(angle) * distance;
+
+        const y =
+            Math.sin(angle) * distance;
+
+
+        setTimeout(function() {
+
+            heart.style.transform =
+                `translate(${x}px, ${y}px)`;
+
+            heart.style.opacity = "0";
+
+        }, 50);
+
+
+        setTimeout(function() {
+
+            heart.remove();
+
+        }, 2000);
+
+    }
+
+}
+function restartExperience() {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+const letterSection =
+    document.getElementById("letter");
+
+const letterObserver =
+    new IntersectionObserver(function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                showLetter();
+
+                letterObserver.unobserve(letterSection);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.4
+    });
+
+
+letterObserver.observe(letterSection);
+setInterval(createHeart, 700); 
+
+</script>
+
+</body>
+
+</html>
